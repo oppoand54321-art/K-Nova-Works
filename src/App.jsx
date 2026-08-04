@@ -1,0 +1,45 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import About from './components/About';
+import Services from './components/Services';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import DevOps from './components/DevOps';
+
+// ہوم پیج کا الگ کمپونেন্ট (جس میں صرف ہوم کی چیزیں ہوں گی)
+function HomePage() {
+  return (
+    <>
+      <Hero />
+      <About />
+      <Services />
+      <Projects />
+      <Contact />
+    </>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <div className="bg-[#080808] min-h-screen text-white">
+        <Navbar />
+        
+        {/* یہاں راؤٹس کے ذریعے پیج مکمل الگ ہوں گے */}
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/devops" element={<DevOps />} />
+        </Routes>
+        
+        {/* Footer */}
+        <footer className="py-8 text-center border-t border-[#1f1f1f] text-gray-500 text-sm">
+          <p>&copy; {new Date().getFullYear()} KNovaworks. All rights reserved.</p>
+        </footer>
+      </div>
+    </Router>
+  );
+}
+
+export default App;
