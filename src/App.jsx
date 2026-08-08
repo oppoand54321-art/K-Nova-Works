@@ -1,5 +1,11 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation
+} from 'react-router-dom';
+
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -7,8 +13,20 @@ import Services from './components/Services';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import DevOps from './components/DevOps';
+import Solutions from './components/Solutions';
 
-// ہوم پیج کا الگ کمپونেন্ট (جس میں صرف ہوم کی چیزیں ہوں گی)
+// Scroll page to top whenever route changes
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
+// Home Page
 function HomePage() {
   return (
     <>
@@ -26,16 +44,26 @@ function App() {
     <Router>
       <div className="bg-[#080808] min-h-screen text-white">
         <Navbar />
-        
-        {/* یہاں راؤٹس کے ذریعے پیج مکمل الگ ہوں گے */}
+
+        {/* Scroll to top on every page navigation */}
+        <ScrollToTop />
+
+        {/* Page Routes */}
         <Routes>
           <Route path="/" element={<HomePage />} />
+
+          {/* Solutions Page */}
+          <Route path="/solutions" element={<Solutions />} />
+
+          {/* DevOps Page */}
           <Route path="/devops" element={<DevOps />} />
         </Routes>
-        
+
         {/* Footer */}
         <footer className="py-8 text-center border-t border-[#1f1f1f] text-gray-500 text-sm">
-          <p>&copy; {new Date().getFullYear()} KNovaworks. All rights reserved.</p>
+          <p>
+            &copy; {new Date().getFullYear()} KNovaworks. All rights reserved.
+          </p>
         </footer>
       </div>
     </Router>

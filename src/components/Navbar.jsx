@@ -9,18 +9,78 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         
         {/* Logo */}
-        <Link to="/" className="text-2xl font-bold tracking-wider text-white">
-          K<span className="text-[#d4d96b]">Nova</span>Works
+        <Link to="/" className="flex items-center">
+          <img
+            src="/images/knovaworks-logo.png"
+            alt="KNovaWorks"
+            className="h-36 w-auto object-contain"
+          />
         </Link>
 
         {/* Desktop Links */}
         <div className="hidden md:flex items-center gap-8 text-gray-300 font-medium">
-          <Link to="/" className="hover:text-[#d4d96b] transition">Home</Link>
-          <a href="/#about" className="hover:text-[#d4d96b] transition">About</a>
-          <a href="/#services" className="hover:text-[#d4d96b] transition">Services</a>
-          <a href="/#projects" className="hover:text-[#d4d96b] transition">Projects</a>
-          <Link to="/devops" className="hover:text-[#d4d96b] transition">DevOps</Link>
-          <a href="/#contact" className="hover:text-[#d4d96b] transition">Contact</a>
+          <Link
+            to="/"
+            className="hover:text-[#d4d96b] transition"
+          >
+            Home
+          </Link>
+
+          <a
+            href="/#about"
+            className="hover:text-[#d4d96b] transition"
+          >
+            About
+          </a>
+
+          <a
+            href="/#services"
+            className="hover:text-[#d4d96b] transition"
+          >
+            Services
+          </a>
+
+          <Link
+            to="/solutions#ai"
+            className="hover:text-[#d4d96b] transition"
+          >
+            AI
+          </Link>
+
+          <Link
+            to="/solutions#erp"
+            className="hover:text-[#d4d96b] transition"
+          >
+            ERP
+          </Link>
+
+          <Link
+            to="/solutions#saas"
+            className="hover:text-[#d4d96b] transition"
+          >
+            SaaS
+          </Link>
+
+          <a
+            href="/#projects"
+            className="hover:text-[#d4d96b] transition"
+          >
+            Projects
+          </a>
+
+          <Link
+            to="/devops"
+            className="hover:text-[#d4d96b] transition"
+          >
+            DevOps
+          </Link>
+
+          <a
+            href="/#contact"
+            className="hover:text-[#d4d96b] transition"
+          >
+            Contact
+          </a>
         </div>
 
         {/* CTA Button */}
@@ -38,11 +98,26 @@ const Navbar = () => {
           onClick={() => setIsOpen(!isOpen)}
           className="md:hidden text-gray-300 focus:outline-none"
         >
-          <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg
+            className="w-7 h-7"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
             {isOpen ? (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
             ) : (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
             )}
           </svg>
         </button>
@@ -52,12 +127,79 @@ const Navbar = () => {
       {/* Mobile Menu Dropdown */}
       {isOpen && (
         <div className="md:hidden bg-[#111111] border-b border-[#222222] px-6 py-6 space-y-4">
-          <Link to="/" onClick={() => setIsOpen(false)} className="block text-gray-300 hover:text-[#d4d96b]">Home</Link>
-          <a href="/#about" onClick={() => setIsOpen(false)} className="block text-gray-300 hover:text-[#d4d96b]">About</a>
-          <a href="/#services" onClick={() => setIsOpen(false)} className="block text-gray-300 hover:text-[#d4d96b]">Services</a>
-          <a href="/#projects" onClick={() => setIsOpen(false)} className="block text-gray-300 hover:text-[#d4d96b]">Projects</a>
-          <Link to="/devops" onClick={() => setIsOpen(false)} className="block text-gray-300 hover:text-[#d4d96b]">DevOps</Link>
-          <a href="/#contact" onClick={() => setIsOpen(false)} className="block text-gray-300 hover:text-[#d4d96b]">Contact</a>
+
+          <Link
+            to="/"
+            onClick={() => setIsOpen(false)}
+            className="block text-gray-300 hover:text-[#d4d96b]"
+          >
+            Home
+          </Link>
+
+          <a
+            href="/#about"
+            onClick={() => setIsOpen(false)}
+            className="block text-gray-300 hover:text-[#d4d96b]"
+          >
+            About
+          </a>
+
+          <a
+            href="/#services"
+            onClick={() => setIsOpen(false)}
+            className="block text-gray-300 hover:text-[#d4d96b]"
+          >
+            Services
+          </a>
+
+          <Link
+            to="/solutions#ai"
+            onClick={() => setIsOpen(false)}
+            className="block text-gray-300 hover:text-[#d4d96b]"
+          >
+            AI
+          </Link>
+
+          <Link
+            to="/solutions#erp"
+            onClick={() => setIsOpen(false)}
+            className="block text-gray-300 hover:text-[#d4d96b]"
+          >
+            ERP
+          </Link>
+
+          <Link
+            to="/solutions#saas"
+            onClick={() => setIsOpen(false)}
+            className="block text-gray-300 hover:text-[#d4d96b]"
+          >
+            SaaS
+          </Link>
+
+          <a
+            href="/#projects"
+            onClick={() => setIsOpen(false)}
+            className="block text-gray-300 hover:text-[#d4d96b]"
+          >
+            Projects
+          </a>
+
+          <Link
+            to="/devops"
+            onClick={() => setIsOpen(false)}
+            className="block text-gray-300 hover:text-[#d4d96b]"
+          >
+            DevOps
+          </Link>
+
+          <a
+            href="/#contact"
+            onClick={() => setIsOpen(false)}
+            className="block text-gray-300 hover:text-[#d4d96b]"
+          >
+            Contact
+          </a>
+
           <div className="pt-2">
             <a
               href="/#contact"
@@ -67,6 +209,7 @@ const Navbar = () => {
               Get Started
             </a>
           </div>
+
         </div>
       )}
     </nav>
