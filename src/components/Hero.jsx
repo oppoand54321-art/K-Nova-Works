@@ -51,7 +51,7 @@ const Hero = () => {
             </h1>
 
             <p className="mt-6 text-gray-300 text-base sm:text-lg leading-relaxed max-w-xl">
-              KNovaWorks delivers top-tier software development, AI automation, custom ERP systems, SaaS platforms, and enterprise cloud infrastructure using React, Next.js, Node.js, .NET, and Python. Visit us at <span className="text-[#d4d96b] font-medium">schoolerp.ink</span>
+              KNovaWorks delivers top-tier software development, AI automation, custom ERP systems, SaaS platforms, enterprise cloud infrastructure, and mobile applications using React, React Native, Next.js, Node.js, .NET, and Python. Visit us at <span className="text-[#d4d96b] font-medium">schoolerp.ink</span>
             </p>
 
             <div className="flex flex-wrap gap-4 mt-8">
@@ -61,11 +61,21 @@ const Hero = () => {
               >
                 View Live Projects
               </a>
+
               <a
                 href="#contact"
                 className="border border-[#222222] hover:border-[#d4d96b] text-white px-8 py-4 rounded-full transition text-sm"
               >
                 Contact Us
+              </a>
+
+              {/* WealthTrack APK Download */}
+              <a
+                href="/wealthtrack.apk"
+                download
+                className="border border-[#d4d96b]/50 hover:border-[#d4d96b] hover:bg-[#d4d96b]/10 text-[#d4d96b] font-semibold px-8 py-4 rounded-full transition text-sm"
+              >
+                📱 Download WealthTrack APK
               </a>
             </div>
 
@@ -106,38 +116,68 @@ const Hero = () => {
 
               {/* Card Features / Modules */}
               <div className="mt-6 space-y-4">
+
                 <div className="p-4 rounded-2xl bg-[#181818] border border-[#262626] flex items-center justify-between">
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-xl bg-[#d4d96b]/10 flex items-center justify-center text-[#d4d96b] font-bold">AI</div>
+                    <div className="w-10 h-10 rounded-xl bg-[#d4d96b]/10 flex items-center justify-center text-[#d4d96b] font-bold">
+                      AI
+                    </div>
                     <div>
                       <h4 className="text-sm font-semibold text-white">Neural Automation</h4>
                       <p className="text-xs text-gray-400">Processing real-time data...</p>
                     </div>
                   </div>
-                  <span className="text-xs text-[#d4d96b] font-medium bg-[#d4d96b]/10 px-2.5 py-1 rounded-full">Active</span>
+                  <span className="text-xs text-[#d4d96b] font-medium bg-[#d4d96b]/10 px-2.5 py-1 rounded-full">
+                    Active
+                  </span>
                 </div>
 
                 <div className="p-4 rounded-2xl bg-[#181818] border border-[#262626] flex items-center justify-between">
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-xl bg-[#d4d96b]/10 flex items-center justify-center text-[#d4d96b] font-bold">ERP</div>
+                    <div className="w-10 h-10 rounded-xl bg-[#d4d96b]/10 flex items-center justify-center text-[#d4d96b] font-bold">
+                      ERP
+                    </div>
                     <div>
                       <h4 className="text-sm font-semibold text-white">Multi-Tenant System</h4>
                       <p className="text-xs text-gray-400">Enterprise & Business Core</p>
                     </div>
                   </div>
-                  <span className="text-xs text-[#d4d96b] font-medium bg-[#d4d96b]/10 px-2.5 py-1 rounded-full">Secure</span>
+                  <span className="text-xs text-[#d4d96b] font-medium bg-[#d4d96b]/10 px-2.5 py-1 rounded-full">
+                    Secure
+                  </span>
                 </div>
 
                 <div className="p-4 rounded-2xl bg-[#181818] border border-[#262626] flex items-center justify-between">
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-xl bg-[#d4d96b]/10 flex items-center justify-center text-[#d4d96b] font-bold">SaaS</div>
+                    <div className="w-10 h-10 rounded-xl bg-[#d4d96b]/10 flex items-center justify-center text-[#d4d96b] font-bold">
+                      SaaS
+                    </div>
                     <div>
                       <h4 className="text-sm font-semibold text-white">Cloud Architecture</h4>
                       <p className="text-xs text-gray-400">Docker & Kubernetes</p>
                     </div>
                   </div>
-                  <span className="text-xs text-[#d4d96b] font-medium bg-[#d4d96b]/10 px-2.5 py-1 rounded-full">Live</span>
+                  <span className="text-xs text-[#d4d96b] font-medium bg-[#d4d96b]/10 px-2.5 py-1 rounded-full">
+                    Live
+                  </span>
                 </div>
+
+                {/* React Native / Mobile */}
+                <div className="p-4 rounded-2xl bg-[#181818] border border-[#262626] flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-xl bg-[#d4d96b]/10 flex items-center justify-center text-[#d4d96b] font-bold">
+                      RN
+                    </div>
+                    <div>
+                      <h4 className="text-sm font-semibold text-white">Mobile Applications</h4>
+                      <p className="text-xs text-gray-400">React Native & Expo</p>
+                    </div>
+                  </div>
+                  <span className="text-xs text-[#d4d96b] font-medium bg-[#d4d96b]/10 px-2.5 py-1 rounded-full">
+                    Ready
+                  </span>
+                </div>
+
               </div>
 
             </div>
@@ -155,9 +195,14 @@ const Hero = () => {
             <span className="inline-block bg-[#111111] border border-[#222222] px-4 py-2 rounded-full text-[#d4d96b] text-sm font-medium mb-4">
               🛡️ Risk-Free Development Model
             </span>
+
             <h2 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
-              How We Work: <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#d4d96b] to-[#fff]">Demo First, Pay as You Go</span>
+              How We Work:{' '}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#d4d96b] to-[#fff]">
+                Demo First, Pay as You Go
+              </span>
             </h2>
+
             <p className="mt-4 text-gray-400 text-base sm:text-lg">
               We provide absolute security for our clients. Get a free demo first, start development with zero advance, and pay safely through 25% milestones.
             </p>
@@ -176,9 +221,11 @@ const Hero = () => {
                 <div className="text-4xl font-extrabold text-[#d4d96b] font-mono mb-6">
                   {item.step}
                 </div>
+
                 <h3 className="text-xl font-bold text-white mb-3">
                   {item.title}
                 </h3>
+
                 <p className="text-gray-400 text-sm leading-relaxed">
                   {item.description}
                 </p>

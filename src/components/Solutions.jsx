@@ -96,13 +96,15 @@ const Solutions = () => {
           <span className="solution-label">ERP</span>
 
           <h2>
-            School & Business
+            All Kinds of Business and
             <span> ERP Solutions</span>
           </h2>
 
           <p>
-            Complete ERP systems for schools and businesses to manage
-            all operations from a single platform.
+            Complete ERP systems for businesses, organizations and
+            institutions to manage operations, resources, finance,
+            employees, inventory and business processes from a single
+            platform.
           </p>
 
           <h3>Modules</h3>
@@ -128,7 +130,7 @@ const Solutions = () => {
 
           <h3>For</h3>
           <ul>
-            <li>Schools, Colleges, Businesses</li>
+            <li>Businesses, Schools, Colleges</li>
             <li>Institutions, Organizations</li>
           </ul>
 

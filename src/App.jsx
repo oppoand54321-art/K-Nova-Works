@@ -14,6 +14,7 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import DevOps from './components/DevOps';
 import Solutions from './components/Solutions';
+import ReactNative from './components/ReactNative';
 
 // Scroll page to top whenever route changes
 function ScrollToTop() {
@@ -57,6 +58,9 @@ function App() {
 
           {/* DevOps Page */}
           <Route path="/devops" element={<DevOps />} />
+
+          {/* React Native Page */}
+          <Route path="/react-native" element={<ReactNative />} />
         </Routes>
 
         {/* Footer */}

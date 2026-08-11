@@ -61,6 +61,14 @@ const Navbar = () => {
             SaaS
           </Link>
 
+          {/* React Native */}
+          <Link
+            to="/react-native"
+            className="hover:text-[#d4d96b] transition"
+          >
+            React Native
+          </Link>
+
           <a
             href="/#projects"
             className="hover:text-[#d4d96b] transition"
@@ -174,6 +182,15 @@ const Navbar = () => {
             className="block text-gray-300 hover:text-[#d4d96b]"
           >
             SaaS
+          </Link>
+
+          {/* React Native */}
+          <Link
+            to="/react-native"
+            onClick={() => setIsOpen(false)}
+            className="block text-gray-300 hover:text-[#d4d96b]"
+          >
+            React Native
           </Link>
 
           <a
