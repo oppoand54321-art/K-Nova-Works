@@ -30,7 +30,7 @@ const Contact = () => {
                 <input 
                   type="email" 
                   required 
-                  placeholder="info@knovaworks.com" 
+                  placeholder="info@knova.work" 
                   className="w-full bg-[#080808] border border-[#222222] rounded-xl px-4 py-3 text-white focus:border-[#d4d96b] outline-none transition"
                 />
               </div>

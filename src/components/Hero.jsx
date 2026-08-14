@@ -51,7 +51,7 @@ const Hero = () => {
             </h1>
 
             <p className="mt-6 text-gray-300 text-base sm:text-lg leading-relaxed max-w-xl">
-              KNovaWorks delivers top-tier software development, AI automation, custom ERP systems, SaaS platforms, enterprise cloud infrastructure, and mobile applications using React, React Native, Next.js, Node.js, .NET, and Python. Visit us at <span className="text-[#d4d96b] font-medium">schoolerp.ink</span>
+              KNova.work delivers top-tier software development, AI automation, custom ERP systems, SaaS platforms, enterprise cloud infrastructure, and mobile applications using React, React Native, Next.js, Node.js, .NET, and Python. Visit us at <span className="text-[#d4d96b] font-medium">schoolerp.ink</span>
             </p>
 
             <div className="flex flex-wrap gap-4 mt-8">
@@ -111,7 +111,7 @@ const Hero = () => {
                   <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
                   <div className="w-3 h-3 rounded-full bg-green-500"></div>
                 </div>
-                <span className="text-xs text-gray-500 font-mono">knovaworks-v2.0.exe</span>
+                <span className="text-xs text-gray-500 font-mono">knova.work-v2.0.exe</span>
               </div>
 
               {/* Card Features / Modules */}

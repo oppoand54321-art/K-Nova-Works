@@ -66,7 +66,7 @@ function App() {
         {/* Footer */}
         <footer className="py-8 text-center border-t border-[#1f1f1f] text-gray-500 text-sm">
           <p>
-            &copy; {new Date().getFullYear()} KNovaworks. All rights reserved.
+            &copy; {new Date().getFullYear()} KNova.work  All rights reserved.
           </p>
         </footer>
       </div>

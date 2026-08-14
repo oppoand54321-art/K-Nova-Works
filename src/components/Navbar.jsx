@@ -12,8 +12,8 @@ const Navbar = () => {
         <Link to="/" className="flex items-center">
           <img
             src="/images/knovaworks-logo.png"
-            alt="KNovaWorks"
-            className="h-36 w-auto object-contain"
+            alt="KNova.Work"
+            className="h-20 w-auto object-contain"
           />
         </Link>
 

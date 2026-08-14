@@ -12,7 +12,7 @@ const About = () => {
         {/* Left Column */}
         <div>
           <span className="text-[#d4d96b] font-semibold uppercase tracking-widest text-sm bg-[#111111] border border-[#222222] px-4 py-2 rounded-full inline-block mb-6">
-            About KNovaWorks
+            About KNova.Work
           </span>
 
           <h2 className="text-4xl sm:text-5xl font-bold text-white leading-tight">
@@ -23,7 +23,7 @@ const About = () => {
           </h2>
 
           <p className="mt-7 text-lg text-gray-300 leading-8">
-            KNovaWorks is a modern software development agency specializing
+            KNova.Work is a modern software development agency specializing
             in AI solutions, ERP systems, SaaS platforms, enterprise software,
             cloud infrastructure, and DevOps services.
           </p>

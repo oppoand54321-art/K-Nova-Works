@@ -72,7 +72,7 @@ const ReactNative = () => {
             </h1>
 
             <p className="mt-7 text-gray-300 text-base sm:text-lg leading-relaxed max-w-3xl mx-auto">
-              KNovaWorks develops modern mobile applications using React
+              KNova.Work develops modern mobile applications using React
               Native, Expo and TypeScript, connected to secure cloud backends,
               APIs and PostgreSQL databases.
             </p>
@@ -119,7 +119,7 @@ const ReactNative = () => {
 
               <p className="text-gray-400 leading-relaxed mt-6">
                 WealthTrack is a cloud-connected personal financial management
-                application developed by KNovaWorks using React Native, Expo
+                application developed by KNova.Work using React Native, Expo
                 and TypeScript. The application connects to Supabase and
                 PostgreSQL to provide secure cloud-based financial management.
               </p>
@@ -537,7 +537,7 @@ const ReactNative = () => {
         <div className="max-w-4xl mx-auto px-6 text-center">
 
           <span className="text-[#d4d96b] text-sm font-semibold uppercase tracking-wider">
-            Build With KNovaWorks
+            Build With KNova.Work
           </span>
 
           <h2 className="text-3xl sm:text-5xl font-extrabold mt-4">
@@ -556,7 +556,7 @@ const ReactNative = () => {
               href="/#contact"
               className="bg-[#d4d96b] hover:bg-[#c2c75d] text-black font-semibold px-8 py-4 rounded-full transition"
             >
-              Contact KNovaWorks
+              Contact KNova.Work
             </a>
 
             <a
