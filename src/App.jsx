@@ -54,8 +54,6 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
 
-          
-
           {/* DevOps Page */}
           <Route path="/devops" element={<DevOps />} />
 

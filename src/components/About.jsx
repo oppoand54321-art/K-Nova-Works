@@ -39,7 +39,7 @@ const About = () => {
 
             {/* AI */}
             <Link
-              to="/solutions#ai"
+              to="/ai"
               className="card p-6 block transition hover:border-[#d4d96b] hover:-translate-y-1 cursor-pointer"
             >
               <h3 className="text-3xl font-bold text-[#d4d96b]">
