@@ -13,7 +13,8 @@ import Services from './components/Services';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import DevOps from './components/DevOps';
-import Solutions from './components/Solutions';
+import AI from './components/AI';
+
 import ReactNative from './components/ReactNative';
 
 // Scroll page to top whenever route changes
@@ -53,11 +54,13 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
 
-          {/* Solutions Page */}
-          <Route path="/solutions" element={<Solutions />} />
+          
 
           {/* DevOps Page */}
           <Route path="/devops" element={<DevOps />} />
+
+          {/* AI Platform Page */}
+          <Route path="/ai" element={<AI />} />
 
           {/* React Native Page */}
           <Route path="/react-native" element={<ReactNative />} />
@@ -66,7 +69,7 @@ function App() {
         {/* Footer */}
         <footer className="py-8 text-center border-t border-[#1f1f1f] text-gray-500 text-sm">
           <p>
-            &copy; {new Date().getFullYear()} KNova.work  All rights reserved.
+            &copy; {new Date().getFullYear()} KNova.work All rights reserved.
           </p>
         </footer>
       </div>

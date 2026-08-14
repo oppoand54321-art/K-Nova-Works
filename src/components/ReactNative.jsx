@@ -1,51 +1,92 @@
 import React from 'react';
 
 const ReactNative = () => {
-  const features = [
-    'Secure User Registration & Login',
-    'Persistent Session Management',
-    'Protected Application Flow',
-    'Financial Dashboard',
-    'Accounts & Wallet Management',
-    'Transaction Management',
-    'User-Level Data Isolation',
+  const mobileFeatures = [
+    'Android & iOS Mobile Applications',
+    'React Native + TypeScript',
+    'Expo Development & Production Builds',
+    'Modern Responsive Mobile UI/UX',
+    'Authentication & User Management',
+    'Secure API & Backend Integration',
     'Cloud Database Integration',
-    'Real-Time Cloud Connectivity',
-    'APK Build & Device Testing',
-    'Modular Service Architecture',
-    'Production-Ready Mobile Architecture',
+    'Push Notifications',
+    'Payment Gateway Integration',
+    'Maps & Location Services',
+    'Camera & Media Integration',
+    'Offline Data & Local Storage',
+    'Real-Time Application Features',
+    'State Management',
+    'Forms & Data Validation',
+    'Performance Optimization',
+    'Android APK & AAB Builds',
+    'iOS Production Builds',
+    'Testing & Device Debugging',
+    'Production Deployment & Maintenance',
   ];
 
   const securityFeatures = [
     {
       title: 'Secure Authentication',
       description:
-        'User registration, login, password verification, persistent sessions and secure logout are implemented as part of the application authentication flow.',
+        'User registration, login, password verification, persistent sessions and secure logout can be implemented as part of the application authentication flow.',
     },
     {
       title: 'Password Protection',
       description:
-        'Password handling uses bcryptjs hashing principles. Plain-text passwords are not stored in the application database.',
+        'Password handling follows secure hashing principles and sensitive credentials are never stored as plain text.',
     },
     {
       title: 'Row Level Security',
       description:
-        'Supabase Row Level Security policies are used to enforce user-level access control at the database layer.',
+        'Database-level security policies can enforce user-level access control and protect application data.',
     },
     {
       title: 'User Data Isolation',
       description:
-        'Financial records are associated with the authenticated user through userId relationships and database security policies.',
+        'Application records can be associated with authenticated users and protected through backend authorization and database policies.',
     },
     {
       title: 'Protected App Flow',
       description:
-        'The application checks authentication state and protects access to the authenticated application experience.',
+        'Authentication state can control access to protected screens and application features.',
     },
     {
       title: 'Centralized Data Layer',
       description:
-        'Database and security-related operations are centralized through a dedicated service layer for maintainability and controlled data access.',
+        'API, database and security operations can be organized through dedicated service layers for maintainability and controlled data access.',
+    },
+  ];
+
+  const appCapabilities = [
+    {
+      title: 'Business Applications',
+      description:
+        'Custom mobile applications for businesses, organizations, services and digital products.',
+    },
+    {
+      title: 'FinTech Applications',
+      description:
+        'Financial dashboards, wallet systems, transaction management and secure financial workflows.',
+    },
+    {
+      title: 'Fitness & Health Platforms',
+      description:
+        'Workout tracking, progress monitoring, nutrition systems, goals and personalized mobile experiences.',
+    },
+    {
+      title: 'E-Commerce Applications',
+      description:
+        'Product catalogs, shopping flows, orders, payments, customer accounts and notifications.',
+    },
+    {
+      title: 'Booking & Service Apps',
+      description:
+        'Appointments, scheduling, service discovery, booking management and customer communication.',
+    },
+    {
+      title: 'SaaS Mobile Applications',
+      description:
+        'Mobile interfaces for cloud-based business platforms, subscription products and enterprise systems.',
     },
   ];
 
@@ -61,28 +102,30 @@ const ReactNative = () => {
           <div className="max-w-4xl mx-auto text-center">
 
             <span className="inline-block bg-[#111111] border border-[#222222] px-5 py-2.5 rounded-full text-[#d4d96b] text-sm font-medium mb-7">
-              ⚛️ React Native • Expo • TypeScript
+              📱 Mobile Apps • React Native • TypeScript • iOS • Android
             </span>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
-              React Native{' '}
+              Complete{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#d4d96b] to-white">
                 Mobile Application Development
               </span>
             </h1>
 
             <p className="mt-7 text-gray-300 text-base sm:text-lg leading-relaxed max-w-3xl mx-auto">
-              KNova.Work develops modern mobile applications using React
-              Native, Expo and TypeScript, connected to secure cloud backends,
-              APIs and PostgreSQL databases.
+              KNova.Work designs and develops modern cross-platform mobile
+              applications for Android and iOS using React Native, Expo and
+              TypeScript, connected to secure APIs, cloud infrastructure and
+              scalable databases.
             </p>
 
             <div className="flex flex-wrap justify-center gap-4 mt-9">
+
               <a
                 href="/#contact"
                 className="bg-[#d4d96b] hover:bg-[#c2c75d] text-black font-semibold px-8 py-4 rounded-full transition shadow-lg shadow-[#d4d96b]/10"
               >
-                Start a React Native Project
+                Start a Mobile App Project
               </a>
 
               <a
@@ -92,9 +135,104 @@ const ReactNative = () => {
               >
                 📱 Download WealthTrack APK
               </a>
+
             </div>
 
           </div>
+        </div>
+      </section>
+
+      {/* Mobile App Capabilities */}
+      <section className="py-24 border-t border-[#1f1f1f]">
+        <div className="max-w-7xl mx-auto px-6">
+
+          <div className="text-center max-w-3xl mx-auto">
+
+            <span className="text-[#d4d96b] text-sm font-semibold uppercase tracking-wider">
+              Mobile Application Capabilities
+            </span>
+
+            <h2 className="text-3xl sm:text-5xl font-extrabold mt-4">
+              Mobile Apps For Different Industries
+            </h2>
+
+            <p className="text-gray-400 mt-5 leading-relaxed">
+              From financial platforms and fitness applications to business
+              systems and SaaS products, we build mobile experiences around
+              real business requirements.
+            </p>
+
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-14">
+
+            {appCapabilities.map((item, index) => (
+              <div
+                key={index}
+                className="bg-[#111111]/80 border border-[#222222] rounded-3xl p-7 hover:border-[#d4d96b]/40 transition"
+              >
+
+                <div className="w-11 h-11 rounded-xl bg-[#d4d96b]/10 flex items-center justify-center text-[#d4d96b] font-bold">
+                  {String(index + 1).padStart(2, '0')}
+                </div>
+
+                <h3 className="text-xl font-bold mt-5">
+                  {item.title}
+                </h3>
+
+                <p className="text-gray-400 text-sm leading-relaxed mt-3">
+                  {item.description}
+                </p>
+
+              </div>
+            ))}
+
+          </div>
+
+        </div>
+      </section>
+
+      {/* Mobile Features */}
+      <section className="py-24 border-t border-[#1f1f1f]">
+        <div className="max-w-7xl mx-auto px-6">
+
+          <div className="text-center max-w-3xl mx-auto">
+
+            <span className="text-[#d4d96b] text-sm font-semibold uppercase tracking-wider">
+              Complete Mobile Development
+            </span>
+
+            <h2 className="text-3xl sm:text-5xl font-extrabold mt-4">
+              What We Can Build
+            </h2>
+
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-14">
+
+            {mobileFeatures.map((feature, index) => (
+              <div
+                key={index}
+                className="bg-[#111111]/80 border border-[#222222] rounded-2xl p-6 hover:border-[#d4d96b]/40 transition"
+              >
+
+                <div className="flex items-center gap-4">
+
+                  <div className="w-9 h-9 rounded-full bg-[#d4d96b]/10 text-[#d4d96b] flex items-center justify-center font-bold">
+                    ✓
+                  </div>
+
+                  <span className="text-gray-200 font-medium">
+                    {feature}
+                  </span>
+
+                </div>
+
+              </div>
+            ))}
+
+          </div>
+
         </div>
       </section>
 
@@ -105,8 +243,9 @@ const ReactNative = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
 
             <div>
+
               <span className="text-[#d4d96b] text-sm font-semibold uppercase tracking-wider">
-                Featured React Native Project
+                Featured Mobile Application
               </span>
 
               <h2 className="text-4xl sm:text-5xl font-extrabold mt-4">
@@ -171,6 +310,7 @@ const ReactNative = () => {
               >
                 📥 Download WealthTrack APK
               </a>
+
             </div>
 
             {/* Architecture Card */}
@@ -181,6 +321,7 @@ const ReactNative = () => {
               <div className="relative bg-[#111111]/90 border border-[#262626] rounded-3xl p-8 shadow-2xl">
 
                 <div className="flex items-center justify-between pb-5 border-b border-[#252525]">
+
                   <div>
                     <p className="text-[#d4d96b] text-sm font-semibold">
                       WEALTHTRACK
@@ -194,6 +335,7 @@ const ReactNative = () => {
                   <div className="w-11 h-11 rounded-xl bg-[#d4d96b]/10 flex items-center justify-center text-[#d4d96b] text-xl">
                     ⚛
                   </div>
+
                 </div>
 
                 <div className="mt-6 space-y-3">
@@ -202,6 +344,7 @@ const ReactNative = () => {
                     <p className="text-white font-semibold">
                       React Native / Expo App
                     </p>
+
                     <p className="text-gray-500 text-xs mt-1">
                       TypeScript Mobile Application
                     </p>
@@ -215,6 +358,7 @@ const ReactNative = () => {
                     <p className="text-white font-semibold">
                       Supabase Client
                     </p>
+
                     <p className="text-gray-500 text-xs mt-1">
                       Cloud Application Connectivity
                     </p>
@@ -228,6 +372,7 @@ const ReactNative = () => {
                     <p className="text-white font-semibold">
                       PostgreSQL Cloud Database
                     </p>
+
                     <p className="text-gray-500 text-xs mt-1">
                       Relational Cloud Data Layer
                     </p>
@@ -239,6 +384,7 @@ const ReactNative = () => {
                       <p className="text-[#d4d96b] text-sm font-semibold">
                         RLS
                       </p>
+
                       <p className="text-gray-500 text-xs mt-1">
                         Data Isolation
                       </p>
@@ -246,10 +392,11 @@ const ReactNative = () => {
 
                     <div className="p-4 rounded-xl bg-[#d4d96b]/5 border border-[#d4d96b]/20">
                       <p className="text-[#d4d96b] text-sm font-semibold">
-                        bcryptjs
+                        Security
                       </p>
+
                       <p className="text-gray-500 text-xs mt-1">
-                        Password Protection
+                        Data Protection
                       </p>
                     </div>
 
@@ -258,9 +405,11 @@ const ReactNative = () => {
                 </div>
 
               </div>
+
             </div>
 
           </div>
+
         </div>
       </section>
 
@@ -269,6 +418,7 @@ const ReactNative = () => {
         <div className="max-w-7xl mx-auto px-6">
 
           <div className="text-center max-w-3xl mx-auto">
+
             <span className="inline-block bg-[#111111] border border-[#222222] px-4 py-2 rounded-full text-[#d4d96b] text-sm font-medium">
               🔐 Security Architecture
             </span>
@@ -278,10 +428,11 @@ const ReactNative = () => {
             </h2>
 
             <p className="text-gray-400 mt-5 leading-relaxed">
-              WealthTrack was designed with user-level data isolation,
-              authentication protection and database-level security as core
-              architectural requirements.
+              Mobile applications can be designed with secure authentication,
+              user-level data isolation, protected APIs and database-level
+              security as core architectural requirements.
             </p>
+
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-14">
@@ -291,6 +442,7 @@ const ReactNative = () => {
                 key={index}
                 className="bg-[#111111]/80 border border-[#222222] rounded-3xl p-7 hover:border-[#d4d96b]/40 transition"
               >
+
                 <div className="w-11 h-11 rounded-xl bg-[#d4d96b]/10 flex items-center justify-center text-[#d4d96b] font-bold">
                   🔒
                 </div>
@@ -302,51 +454,12 @@ const ReactNative = () => {
                 <p className="text-gray-400 text-sm leading-relaxed mt-3">
                   {item.description}
                 </p>
+
               </div>
             ))}
 
           </div>
-        </div>
-      </section>
 
-      {/* Features */}
-      <section className="py-24 border-t border-[#1f1f1f]">
-        <div className="max-w-7xl mx-auto px-6">
-
-          <div className="text-center max-w-3xl mx-auto">
-
-            <span className="text-[#d4d96b] text-sm font-semibold uppercase tracking-wider">
-              Application Features
-            </span>
-
-            <h2 className="text-3xl sm:text-5xl font-extrabold mt-4">
-              What We Built
-            </h2>
-
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-14">
-
-            {features.map((feature, index) => (
-              <div
-                key={index}
-                className="bg-[#111111]/80 border border-[#222222] rounded-2xl p-6 hover:border-[#d4d96b]/40 transition"
-              >
-                <div className="flex items-center gap-4">
-
-                  <div className="w-9 h-9 rounded-full bg-[#d4d96b]/10 text-[#d4d96b] flex items-center justify-center font-bold">
-                    ✓
-                  </div>
-
-                  <span className="text-gray-200 font-medium">
-                    {feature}
-                  </span>
-
-                </div>
-              </div>
-            ))}
-
-          </div>
         </div>
       </section>
 
@@ -359,7 +472,7 @@ const ReactNative = () => {
             <div>
 
               <span className="text-[#d4d96b] text-sm font-semibold uppercase tracking-wider">
-                Code Architecture
+                Mobile Architecture
               </span>
 
               <h2 className="text-3xl sm:text-5xl font-extrabold mt-4">
@@ -367,21 +480,23 @@ const ReactNative = () => {
               </h2>
 
               <p className="text-gray-400 leading-relaxed mt-6">
-                WealthTrack uses a modular service-based architecture. Core
-                database and security-related operations are centralized in a
-                dedicated service layer, keeping business and data logic
-                separated from individual application screens.
+                Mobile applications are structured using reusable components,
+                modular services and separated data layers. This makes the
+                application easier to maintain, extend and connect with
+                different backend systems.
               </p>
 
               <div className="mt-7 bg-[#111111] border border-[#222222] rounded-2xl p-6">
+
                 <p className="text-[#d4d96b] font-mono text-sm">
-                  src/services/dbService.ts
+                  src/services/
                 </p>
 
                 <p className="text-gray-400 text-sm mt-3 leading-relaxed">
-                  Centralized database operations, user-related operations,
-                  transaction handling and data access logic.
+                  Centralized API operations, authentication, database
+                  communication, application services and business logic.
                 </p>
+
               </div>
 
             </div>
@@ -389,13 +504,15 @@ const ReactNative = () => {
             <div className="space-y-4">
 
               <div className="bg-[#111111] border border-[#222222] rounded-2xl p-6">
+
                 <p className="text-[#d4d96b] text-sm font-semibold">
-                  USERS
+                  MOBILE APPLICATION
                 </p>
 
                 <p className="text-gray-400 text-sm mt-2">
-                  User credentials, account identifiers and profile data.
+                  React Native + TypeScript + reusable UI components.
                 </p>
+
               </div>
 
               <div className="text-center text-[#d4d96b]">
@@ -403,14 +520,15 @@ const ReactNative = () => {
               </div>
 
               <div className="bg-[#111111] border border-[#222222] rounded-2xl p-6">
+
                 <p className="text-[#d4d96b] text-sm font-semibold">
-                  TRANSACTIONS
+                  API / BACKEND
                 </p>
 
                 <p className="text-gray-400 text-sm mt-2">
-                  Financial records associated with individual authenticated
-                  users through userId relationships.
+                  Secure API communication, authentication and business logic.
                 </p>
+
               </div>
 
               <div className="text-center text-[#d4d96b]">
@@ -418,34 +536,37 @@ const ReactNative = () => {
               </div>
 
               <div className="bg-[#d4d96b]/5 border border-[#d4d96b]/20 rounded-2xl p-6">
+
                 <p className="text-[#d4d96b] text-sm font-semibold">
-                  SUPABASE RLS
+                  CLOUD DATABASE
                 </p>
 
                 <p className="text-gray-400 text-sm mt-2">
-                  Database-level policies enforce user-scoped access to
-                  protected financial records.
+                  PostgreSQL, Supabase or other scalable cloud database
+                  infrastructure.
                 </p>
+
               </div>
 
             </div>
 
           </div>
+
         </div>
       </section>
 
-      {/* Development Status */}
+      {/* Development & Deployment */}
       <section className="py-24 border-t border-[#1f1f1f]">
         <div className="max-w-7xl mx-auto px-6">
 
-          <div className="text-center">
+          <div className="text-center max-w-3xl mx-auto">
 
             <span className="text-[#d4d96b] text-sm font-semibold uppercase tracking-wider">
-              Project Status
+              Development & Production
             </span>
 
             <h2 className="text-3xl sm:text-5xl font-extrabold mt-4">
-              WealthTrack Development
+              From Development to Deployment
             </h2>
 
           </div>
@@ -453,82 +574,75 @@ const ReactNative = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-14">
 
             <div className="bg-[#111111] border border-[#222222] rounded-3xl p-7">
+
               <span className="text-[#d4d96b] text-3xl font-bold">
                 01
               </span>
 
               <h3 className="text-xl font-bold mt-5">
-                Mobile Application
+                Development
               </h3>
 
               <p className="text-gray-400 text-sm mt-3">
-                React Native, Expo, TypeScript, navigation and core screen UI
-                completed.
+                React Native, TypeScript, reusable components, navigation,
+                forms, APIs and application architecture.
               </p>
 
-              <span className="inline-block mt-5 text-xs text-[#d4d96b] bg-[#d4d96b]/10 px-3 py-1 rounded-full">
-                Completed
-              </span>
             </div>
 
             <div className="bg-[#111111] border border-[#222222] rounded-3xl p-7">
+
               <span className="text-[#d4d96b] text-3xl font-bold">
                 02
               </span>
 
               <h3 className="text-xl font-bold mt-5">
-                Cloud Database
+                Integration
               </h3>
 
               <p className="text-gray-400 text-sm mt-3">
-                Supabase PostgreSQL integration, schema design and cloud
-                synchronization completed.
+                Backend APIs, authentication, databases, cloud services,
+                notifications and third-party integrations.
               </p>
 
-              <span className="inline-block mt-5 text-xs text-[#d4d96b] bg-[#d4d96b]/10 px-3 py-1 rounded-full">
-                Completed
-              </span>
             </div>
 
             <div className="bg-[#111111] border border-[#222222] rounded-3xl p-7">
+
               <span className="text-[#d4d96b] text-3xl font-bold">
                 03
               </span>
 
               <h3 className="text-xl font-bold mt-5">
-                Security
+                Testing
               </h3>
 
               <p className="text-gray-400 text-sm mt-3">
-                Authentication, password handling, sessions and Supabase RLS
-                data isolation completed.
+                Device testing, debugging, performance optimization and
+                production readiness checks.
               </p>
 
-              <span className="inline-block mt-5 text-xs text-[#d4d96b] bg-[#d4d96b]/10 px-3 py-1 rounded-full">
-                Completed
-              </span>
             </div>
 
             <div className="bg-[#111111] border border-[#222222] rounded-3xl p-7">
+
               <span className="text-[#d4d96b] text-3xl font-bold">
                 04
               </span>
 
               <h3 className="text-xl font-bold mt-5">
-                Build & Deployment
+                Deployment
               </h3>
 
               <p className="text-gray-400 text-sm mt-3">
-                GitHub version control, APK generation and physical device
-                testing completed.
+                Android APK/AAB builds, iOS production builds, environment
+                configuration and deployment preparation.
               </p>
 
-              <span className="inline-block mt-5 text-xs text-[#d4d96b] bg-[#d4d96b]/10 px-3 py-1 rounded-full">
-                Completed
-              </span>
             </div>
 
           </div>
+
         </div>
       </section>
 
@@ -541,13 +655,13 @@ const ReactNative = () => {
           </span>
 
           <h2 className="text-3xl sm:text-5xl font-extrabold mt-4">
-            Need a React Native Application?
+            Need a Mobile Application?
           </h2>
 
           <p className="text-gray-400 text-base sm:text-lg mt-5 leading-relaxed">
-            From secure financial applications to custom business mobile
-            platforms, we can design, develop and connect your application to
-            the backend and cloud infrastructure it needs.
+            From secure financial applications to custom business platforms,
+            fitness systems and SaaS products, KNova.Work can design, develop,
+            integrate and prepare your mobile application for production.
           </p>
 
           <div className="flex flex-wrap justify-center gap-4 mt-9">

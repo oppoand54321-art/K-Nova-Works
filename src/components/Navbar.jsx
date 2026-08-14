@@ -40,25 +40,12 @@ const Navbar = () => {
             Services
           </a>
 
+          {/* AI Platform */}
           <Link
-            to="/solutions#ai"
+            to="/ai"
             className="hover:text-[#d4d96b] transition"
           >
             AI
-          </Link>
-
-          <Link
-            to="/solutions#erp"
-            className="hover:text-[#d4d96b] transition"
-          >
-            ERP
-          </Link>
-
-          <Link
-            to="/solutions#saas"
-            className="hover:text-[#d4d96b] transition"
-          >
-            SaaS
           </Link>
 
           {/* React Native */}
@@ -66,7 +53,7 @@ const Navbar = () => {
             to="/react-native"
             className="hover:text-[#d4d96b] transition"
           >
-            React Native
+            Mobile Apps
           </Link>
 
           <a
@@ -160,28 +147,13 @@ const Navbar = () => {
             Services
           </a>
 
+          {/* AI Platform */}
           <Link
-            to="/solutions#ai"
+            to="/ai"
             onClick={() => setIsOpen(false)}
             className="block text-gray-300 hover:text-[#d4d96b]"
           >
             AI
-          </Link>
-
-          <Link
-            to="/solutions#erp"
-            onClick={() => setIsOpen(false)}
-            className="block text-gray-300 hover:text-[#d4d96b]"
-          >
-            ERP
-          </Link>
-
-          <Link
-            to="/solutions#saas"
-            onClick={() => setIsOpen(false)}
-            className="block text-gray-300 hover:text-[#d4d96b]"
-          >
-            SaaS
           </Link>
 
           {/* React Native */}
@@ -190,7 +162,7 @@ const Navbar = () => {
             onClick={() => setIsOpen(false)}
             className="block text-gray-300 hover:text-[#d4d96b]"
           >
-            React Native
+            Mobile Apps
           </Link>
 
           <a
