@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://knova.work/sitemap.xml
